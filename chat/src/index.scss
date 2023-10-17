@@ -18,16 +18,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -35,19 +25,4 @@ table {
 
 * {
   -webkit-tap-highlight-color: transparent;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (forced-colors: active) {
-  svg {
-    fill: CanvasText !important;
-  }
-
-  button svg {
-    fill: ButtonText !important;
-  }
 }
