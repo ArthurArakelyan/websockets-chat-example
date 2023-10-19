@@ -7,7 +7,7 @@ import { UseHomeContainerType } from './useHome';
 
 import styles from './Home.module.scss';
 
-const Home: FC<UseHomeContainerType> = ({ control, handleSubmit, handleFormSubmit }) => {
+const Home: FC<UseHomeContainerType> = ({ control, handleSubmit, handleFormSubmit, isJoin }) => {
   return (
     <Box paddingY="20px" display="flex" alignItems="center" justifyContent="center" minHeight="100dvh">
       <Container>
@@ -52,7 +52,7 @@ const Home: FC<UseHomeContainerType> = ({ control, handleSubmit, handleFormSubmi
                       </Box>
 
                       <Typography variant="button">
-                        Create Chat Room
+                        {isJoin ? 'Join Room' : 'Create Chat Room'}
                       </Typography>
                     </Button>
                   </form>

@@ -1,6 +1,6 @@
 {
-  "name": "chat",
-  "version": "0.1.0",
+  "name": "websockets-chat-example",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",

@@ -19,12 +19,14 @@ const io = new Server(server, {
 });
 
 app.get('/', (req, res) => {
-  res.send('<h1>Chat Server</h1>');
+  res.send('<h1>Chat Server Example</h1>');
 });
 
 io.on('connection', (socket) => {
-  socket.on('chat', (message) => {
-    socket.broadcast.emit('chat', message);
+  socket.on('create chat', (id) => {
+    socket.on(`chat:${id}`, (message) => {
+      socket.broadcast.emit(`chat:${id}`, message);
+    });
   });
 
   socket.on('disconnect', () => {

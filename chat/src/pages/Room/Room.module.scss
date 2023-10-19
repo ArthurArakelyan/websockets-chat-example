@@ -1,0 +1,21 @@
+.room-container {
+  padding: 48px 24px;
+}
+
+.room-messages {
+  max-height: calc(100vh - 232px);
+  overflow-y: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+
+  &--empty {
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .room-container {
+    padding: 48px 0;
+  }
+}
